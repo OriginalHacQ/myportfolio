@@ -1,3 +1,15 @@
+/* Fix contact section button visibility in dark mode */
+body[data-bs-theme='dark'] .btn-outline-dark {
+    color: #eebbc3 !important;
+    border-color: #eebbc3 !important;
+    background: none !important;
+}
+body[data-bs-theme='dark'] .btn-outline-dark:hover,
+body[data-bs-theme='dark'] .btn-outline-dark:focus {
+    color: #232946 !important;
+    background: #eebbc3 !important;
+    border-color: #eebbc3 !important;
+}
 /* Navbar and Footer Dark Mode Improvements */
 body[data-bs-theme='dark'] .navbar {
     background: #181c24 !important;
