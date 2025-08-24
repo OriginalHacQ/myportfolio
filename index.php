@@ -15,7 +15,7 @@ $about = $stmt_about->fetch();
     <h2 class="hero-subtitle mb-3">IT Professional & Web Developer</h2>
     <p class="hero-tagline mb-4">Building smart solutions with <span class="hero-highlight">PHP</span>, <span class="hero-highlight">MySQL</span>, and creativity</p>
     <a href="portfolio.php" class="btn btn-primary btn-lg me-2">View My Work</a>
-    <a href="assets/resume.pdf" class="btn btn-outline-primary btn-lg" download>Download Resume</a>
+    <a href="assets/uploads/resume.pdf" class="btn btn-outline-primary btn-lg" download>Download Resume</a>
 </section>
 
 <!-- About Me Section -->

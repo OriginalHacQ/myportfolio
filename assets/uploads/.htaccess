@@ -1,7 +1,5 @@
-# Deny access to all files by default
-Deny from all
-
-# Allow access to specific file types (e.g., images)
-<FilesMatch "\.(jpg|jpeg|png|gif|webp)$">
-    Allow from all
+Order allow,deny
+Allow from all
+<FilesMatch "\.(htaccess|htpasswd|ini|phps|fla|psd|log|sh|sql)$">
+	Deny from all
 </FilesMatch>

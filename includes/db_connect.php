@@ -1,8 +1,8 @@
 <?php
-// Enable error reporting for debugging
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+// Disable error reporting for production
+ini_set('display_errors', 0);
+ini_set('display_startup_errors', 0);
+error_reporting(0);
 // --- Database Credentials ---
 $db_host = 'localhost';
 $db_name = 'myportfolio'; // The name of your database

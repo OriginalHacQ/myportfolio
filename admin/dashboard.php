@@ -17,7 +17,7 @@ $message_count = $pdo->query("SELECT count(*) FROM messages")->fetchColumn();
         </div>
     </div>
     <div class="row g-4 mb-4">
-        <div class="col-md-4">
+        <div class="col-md-3">
             <div class="card shadow-sm border-0" style="background:#fff;border-radius:18px;">
                 <div class="card-body text-center py-4">
                     <div class="mb-2" style="font-size:2.5rem;color:#232946;"><i class="bi bi-briefcase"></i></div>
@@ -27,7 +27,7 @@ $message_count = $pdo->query("SELECT count(*) FROM messages")->fetchColumn();
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
             <div class="card shadow-sm border-0" style="background:#fff;border-radius:18px;">
                 <div class="card-body text-center py-4">
                     <div class="mb-2" style="font-size:2.5rem;color:#232946;"><i class="bi bi-envelope"></i></div>
@@ -37,13 +37,23 @@ $message_count = $pdo->query("SELECT count(*) FROM messages")->fetchColumn();
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
             <div class="card shadow-sm border-0" style="background:#fff;border-radius:18px;">
                 <div class="card-body text-center py-4">
                     <div class="mb-2" style="font-size:2.5rem;color:#232946;"><i class="bi bi-person"></i></div>
                     <h2 class="mb-1" style="font-weight:800;letter-spacing:1px;">Profile</h2>
                     <div class="mb-2 text-muted">Edit your about page and settings</div>
                     <a href="edit_about.php" class="btn btn-outline-primary w-100">Edit About</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0" style="background:#fff;border-radius:18px;">
+                <div class="card-body text-center py-4">
+                    <div class="mb-2" style="font-size:2.5rem;color:#232946;"><i class="bi bi-file-earmark-pdf"></i></div>
+                    <h2 class="mb-1" style="font-weight:800;letter-spacing:1px;">Resume</h2>
+                    <div class="mb-2 text-muted">Upload or delete your resume</div>
+                    <a href="manage_resume.php" class="btn btn-outline-primary w-100">Manage Resume</a>
                 </div>
             </div>
         </div>
