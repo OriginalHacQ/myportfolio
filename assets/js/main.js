@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const darkModeToggle = document.getElementById('darkModeToggle');
-    const body = document.documentElement; // Target the <html> element
+    const body = document.body; // Target the <body> element
 
     // Function to set the theme
     const applyTheme = (theme) => {
@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
     darkModeToggle.addEventListener('click', () => {
         const currentTheme = body.getAttribute('data-bs-theme');
         const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-        
         localStorage.setItem('theme', newTheme);
         applyTheme(newTheme);
     });

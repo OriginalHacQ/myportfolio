@@ -1,3 +1,227 @@
+/* Navbar and Footer Dark Mode Improvements */
+body[data-bs-theme='dark'] .navbar {
+    background: #181c24 !important;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+    border-radius: 0 0 18px 18px;
+}
+body[data-bs-theme='dark'] .navbar .navbar-brand,
+body[data-bs-theme='dark'] .navbar .nav-link {
+    color: #eebbc3 !important;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.18);
+}
+body[data-bs-theme='dark'] .navbar .nav-link.active,
+body[data-bs-theme='dark'] .navbar .nav-link:focus,
+body[data-bs-theme='dark'] .navbar .nav-link:hover {
+    color: #d4af37 !important;
+    background: rgba(212,175,55,0.08);
+    border-radius: 8px;
+}
+body[data-bs-theme='dark'] footer,
+body[data-bs-theme='dark'] .footer,
+html[data-bs-theme='dark'] footer {
+    background: linear-gradient(90deg, #232946 0%, #181c24 100%) !important;
+    color: #eebbc3 !important;
+    border-radius: 18px 18px 0 0;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+}
+body[data-bs-theme='dark'] footer p,
+body[data-bs-theme='dark'] .footer p {
+    color: #eebbc3 !important;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.18);
+}
+/* Hero Section Styles */
+.hero-section {
+    background: linear-gradient(120deg, #e0efecff 0%, #c9d6ff 100%);
+    border-radius: 24px;
+    box-shadow: 0 8px 32px rgba(106,130,251,0.10);
+}
+.hero-title {
+    font-size: 3.2rem;
+    font-weight: 900;
+    color: #2b2d42;
+    text-shadow: 0 2px 12px rgba(212,175,55,0.10), 0 1px 0 #fff;
+    letter-spacing: -1.5px;
+}
+.hero-subtitle {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #6a82fb;
+    text-shadow: 0 2px 8px rgba(106,130,251,0.10);
+}
+.hero-tagline {
+    font-size: 1.25rem;
+    color: #495057;
+    font-weight: 500;
+    text-shadow: 0 1px 2px rgba(212,175,55,0.08);
+}
+.hero-highlight {
+    color: #d4af37;
+    font-weight: 700;
+}
+@media (max-width: 767px) {
+    .hero-title { font-size: 2.1rem; }
+    .hero-subtitle { font-size: 1.2rem; }
+}
+
+body[data-bs-theme='dark'] .hero-section {
+    background: linear-gradient(120deg, #232946 0%, #181c24 100%);
+    box-shadow: 0 8px 32px rgba(35,41,70,0.18);
+}
+body[data-bs-theme='dark'] .hero-title {
+    color: #fff;
+    text-shadow: 0 2px 12px rgba(0,0,0,0.22);
+}
+body[data-bs-theme='dark'] .hero-subtitle {
+    color: #eebbc3;
+    text-shadow: 0 2px 8px rgba(106,130,251,0.18);
+}
+body[data-bs-theme='dark'] .hero-tagline {
+    color: #e0e7ef;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.18);
+}
+body[data-bs-theme='dark'] .hero-highlight {
+    color: #d4af37;
+}
+/* Dark Mode Styles */
+body[data-bs-theme='dark'] {
+    background: linear-gradient(135deg, #181c24 0%, #232946 100%) !important;
+    color: #f5f6fa;
+}
+body[data-bs-theme='dark'],
+body[data-bs-theme='dark'] .glass,
+body[data-bs-theme='dark'] .luxury,
+body[data-bs-theme='dark'] .card,
+body[data-bs-theme='dark'] .navbar,
+body[data-bs-theme='dark'] .progress,
+body[data-bs-theme='dark'] .form-control,
+body[data-bs-theme='dark'] .modal-content {
+    color: #f5f6fa !important;
+}
+body[data-bs-theme='dark'] .card-title,
+body[data-bs-theme='dark'] .display-4,
+body[data-bs-theme='dark'] h1, body[data-bs-theme='dark'] h2, body[data-bs-theme='dark'] h3, body[data-bs-theme='dark'] h4, body[data-bs-theme='dark'] h5 {
+    color: #fff !important;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.18) !important;
+}
+body[data-bs-theme='dark'] .lead, body[data-bs-theme='dark'] p, body[data-bs-theme='dark'] .card-text, body[data-bs-theme='dark'] .skill-icon-label {
+    color: #e0e7ef !important;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.18);
+}
+html[data-bs-theme='dark'] body,
+html[data-bs-theme='dark'] .glass,
+html[data-bs-theme='dark'] .luxury,
+html[data-bs-theme='dark'] .card,
+html[data-bs-theme='dark'] .navbar,
+html[data-bs-theme='dark'] .progress,
+html[data-bs-theme='dark'] .form-control,
+html[data-bs-theme='dark'] .modal-content {
+    background: rgba(35,41,70,0.92) !important;
+    color: #e0e7ef !important;
+    border-color: #232946 !important;
+    box-shadow: 0 4px 32px rgba(35,41,70,0.18) !important;
+}
+html[data-bs-theme='dark'] .card-title,
+html[data-bs-theme='dark'] .display-4,
+html[data-bs-theme='dark'] h1, html[data-bs-theme='dark'] h2, html[data-bs-theme='dark'] h3, html[data-bs-theme='dark'] h4, html[data-bs-theme='dark'] h5 {
+    color: #eebbc3 !important;
+    text-shadow: none !important;
+}
+html[data-bs-theme='dark'] .btn-primary,
+html[data-bs-theme='dark'] .btn-outline-primary {
+    background: linear-gradient(90deg, #232946 0%, #6a82fb 100%) !important;
+    color: #fff !important;
+    border: none !important;
+}
+html[data-bs-theme='dark'] .btn-outline-primary {
+    background: none !important;
+    color: #eebbc3 !important;
+    border: 1.5px solid #eebbc3 !important;
+}
+html[data-bs-theme='dark'] .btn-dark {
+    background: #eebbc3 !important;
+    color: #232946 !important;
+    border: none !important;
+}
+html[data-bs-theme='dark'] .skill-icon-img,
+html[data-bs-theme='dark'] .animated-skill-icon {
+    background: #232946 !important;
+    border-color: #eebbc3 !important;
+}
+html[data-bs-theme='dark'] .animated-skill-icon:hover {
+    box-shadow: 0 6px 18px rgba(238,187,195,0.18);
+    border: 1.5px solid #6a82fb;
+    background: #181c24;
+}
+html[data-bs-theme='dark'] footer {
+    background: #232946 !important;
+    color: #eebbc3 !important;
+}
+html[data-bs-theme='dark'] .progress-bar {
+    background-color: #eebbc3 !important;
+    color: #232946 !important;
+}
+/* Animated Skill Icons */
+.animated-skill-icon {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    margin: 0 8px 8px 0;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(106,130,251,0.10);
+    border: 1.5px solid #e0e7ef;
+    transition: transform 0.22s cubic-bezier(.4,2,.6,1), box-shadow 0.22s, border 0.22s;
+    will-change: transform;
+    display: inline-block;
+}
+.animated-skill-icon:hover {
+    transform: scale(1.18) rotate(-6deg);
+    box-shadow: 0 6px 18px rgba(212,175,55,0.18);
+    border: 1.5px solid #d4af37;
+    background: #f8fafc;
+}
+/* Beautiful Skill Icons */
+.skill-icon-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #fff 60%, #e0e7ef 100%);
+    box-shadow: 0 4px 18px rgba(106,130,251,0.10), 0 1.5px 0 #fff;
+    margin: 0 8px 8px 0;
+    transition: box-shadow 0.25s, transform 0.25s;
+    position: relative;
+    cursor: pointer;
+}
+.skill-icon-wrap:hover {
+    box-shadow: 0 8px 32px rgba(106,130,251,0.18), 0 2px 0 #d4af37;
+    transform: translateY(-4px) scale(1.08);
+    background: linear-gradient(135deg, #eebbc3 0%, #b8c1ec 100%);
+}
+.skill-icon-img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin-bottom: 4px;
+    filter: drop-shadow(0 2px 6px rgba(106,130,251,0.10));
+    transition: filter 0.2s;
+}
+.skill-icon-wrap:hover .skill-icon-img {
+    filter: drop-shadow(0 4px 16px rgba(212,175,55,0.18));
+}
+.skill-icon-label {
+    font-size: 0.85em;
+    color: #232946;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    margin-top: 2px;
+    text-align: center;
+    white-space: nowrap;
+    text-shadow: 0 1px 0 #fff;
+}
 /* Modern Portfolio Custom Styles */
 
 body {
