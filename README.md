@@ -21,6 +21,10 @@ A modern, responsive personal portfolio website built with PHP, MySQL, Bootstrap
 
 ## Setup Instructions
 
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/OriginalHacQ/myportfolio.git
+   cd myportfolio
    ```
 2. **Set up the database**
    - Import `database_schema.sql` into your MySQL server.
@@ -29,7 +33,7 @@ A modern, responsive personal portfolio website built with PHP, MySQL, Bootstrap
    - Ensure `assets/uploads/` is writable for image uploads.
 4. **Run locally**
    - Place the project in your web server's root (e.g., XAMPP's `htdocs`).
-   - Access via `htt`.
+   - Access via `http://localhost/myportfolio`.
 5. **Admin Access**
    - Visit `/admin/login.php` to log in and manage content.
 
